@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header class="bg-black py-4 px-4 w-[100%]">
+      <h1 class="text-white text-3xl font-bold text-center font-mono">
+        Encriptador
+      </h1>
+    </header>
+    <main>
+      <!-- INFO -->
+      <section class="py-4 px-4 w-[100%] font-mono">
+        <p>
+          Este proyecto corresponde al primer Challenge del Programa ONE de
+          <a class="text-blue-600 font-semibold" href=""
+            >Oracle Next Education</a
+          >
+          y <a class="text-blue-600 font-semibold" href="">Alura Latam</a>
+        </p>
+      </section>
+      <!-- TEXTO A ENCRIPTAR -->
+      <section>
+        <!-- LABEL E INPUT -->
+        <div class="p-4">
+          <label for="primerTexto" class="block mb-4 text-center font-bold"
+            >Ingresa el texto a encriptar:</label
+          >
+          <textarea
+            class="block border-solid border-black border-2 rounded-md w-[60%] mx-auto h-60 p-2"
+            type="text"
+            id="primerTexto"
+            placeholder="Escribe lo que quieras..."
+          ></textarea>
+        </div>
+        <!-- BOTONES -->
+        <div class="w-[80%] mx-auto flex justify-center gap-1">
+          <button
+            type="button"
+            class="font-mono border-solid border-black border-2 rounded-md p-2 bg-blue-500 text-white font-semibold hover:bg-blue-800"
+          >
+            encriptar
+          </button>
+          <button
+            type="button"
+            class="font-mono border-solid border-black border-2 rounded-md p-2 bg-blue-500 text-white font-semibold hover:bg-blue-800"
+          >
+            desencriptar
+          </button>
+        </div>
+      </section>
+      <!-- TEXTO  DESENCRIPTADO -->
+      <section>
+        <!-- LABEL E INPUT -->
+        <div class="p-4">
+          <label for="primerTexto" class="block mb-4 text-center font-bold"
+            >Texto desencriptado</label
+          >
+          <textarea
+            class="block border-solid border-black border-2 rounded-md w-[60%] mx-auto h-60 p-2"
+            disabled
+            type="text"
+            id="primerTexto"
+            placeholder=" "
+          ></textarea>
+        </div>
+        <!-- BOTONES -->
+        <div class="w-[80%] mx-auto mb-8 flex justify-center gap-1">
+          <button
+            type="button"
+            class="font-mono border-solid border-black border-2 rounded-md p-2 bg-green-500 text-white font-semibold hover:bg-green-800"
+          >
+            copiar
+          </button>
+          <button
+            type="button"
+            class="font-mono border-solid border-black border-2 rounded-md p-2 bg-red-500 text-white font-semibold hover:bg-red-800"
+          >
+            reiniciar
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black flex flex-col justify-center items-center py-2">
+      <p class="text-white">Developed by Paulo de los Reyes</p>
+      <a class="text-white font-bold underline" href="">paulo.dev</a>
+    </footer>
+  </body>
+</html>
