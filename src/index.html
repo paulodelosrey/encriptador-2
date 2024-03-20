@@ -15,39 +15,49 @@
     <main>
       <!-- INFO -->
       <section class="py-4 px-4 w-[100%] font-mono">
-        <p>
+        <p class="text-center">
           Este proyecto corresponde al primer Challenge del Programa ONE de
-          <a class="text-blue-600 font-semibold" href=""
+          <a
+            class="text-blue-600 font-semibold"
+            href="https://www.oracle.com/co/education/oracle-next-education/"
             >Oracle Next Education</a
           >
-          y <a class="text-blue-600 font-semibold" href="">Alura Latam</a>
+          y
+          <a
+            class="text-blue-600 font-semibold"
+            href="https://www.aluracursos.com/"
+            >Alura Latam</a
+          >
         </p>
       </section>
       <!-- TEXTO A ENCRIPTAR -->
       <section>
         <!-- LABEL E INPUT -->
         <div class="p-4">
-          <label for="primerTexto" class="block mb-4 text-center font-bold"
-            >Ingresa el texto a encriptar:</label
+          <label for="texto1" class="block mb-4 text-center font-bold"
+            >Ingresa el texto a encriptar o desencriptar:</label
           >
           <textarea
             class="block border-solid border-black border-2 rounded-md w-[60%] mx-auto h-60 p-2"
             type="text"
-            id="primerTexto"
+            id="texto1"
             placeholder="Escribe lo que quieras..."
           ></textarea>
         </div>
         <!-- BOTONES -->
         <div class="w-[80%] mx-auto flex justify-center gap-1">
           <button
+            id="encriptar"
             type="button"
             class="font-mono border-solid border-black border-2 rounded-md p-2 bg-blue-500 text-white font-semibold hover:bg-blue-800"
           >
             encriptar
           </button>
           <button
+            id="desencriptar"
             type="button"
             class="font-mono border-solid border-black border-2 rounded-md p-2 bg-blue-500 text-white font-semibold hover:bg-blue-800"
+            disabled
           >
             desencriptar
           </button>
@@ -57,28 +67,32 @@
       <section>
         <!-- LABEL E INPUT -->
         <div class="p-4">
-          <label for="primerTexto" class="block mb-4 text-center font-bold"
-            >Texto desencriptado</label
+          <label for="texto2" class="block mb-4 text-center font-bold"
+            >Texto procesado</label
           >
           <textarea
             class="block border-solid border-black border-2 rounded-md w-[60%] mx-auto h-60 p-2"
             disabled
             type="text"
-            id="primerTexto"
+            id="texto2"
             placeholder=" "
           ></textarea>
         </div>
         <!-- BOTONES -->
         <div class="w-[80%] mx-auto mb-8 flex justify-center gap-1">
           <button
+            id="copiar"
             type="button"
             class="font-mono border-solid border-black border-2 rounded-md p-2 bg-green-500 text-white font-semibold hover:bg-green-800"
+            disabled
           >
             copiar
           </button>
           <button
+            id="reiniciar"
             type="button"
             class="font-mono border-solid border-black border-2 rounded-md p-2 bg-red-500 text-white font-semibold hover:bg-red-800"
+            disabled
           >
             reiniciar
           </button>
@@ -87,7 +101,12 @@
     </main>
     <footer class="bg-black flex flex-col justify-center items-center py-2">
       <p class="text-white">Developed by Paulo de los Reyes</p>
-      <a class="text-white font-bold underline" href="">paulo.dev</a>
+      <a
+        class="text-white font-bold underline"
+        href="https://paulowebdev.netlify.app/"
+        >paulo.dev</a
+      >
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>
